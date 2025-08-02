@@ -231,5 +231,9 @@ model_ft = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler,
                        num_epochs=25)
 
 
+Q12. What line of code is used to freeze the layers in a pre-trained model?
+
+for param in model.parameters():
+    param.requires_grad = False
 
 
